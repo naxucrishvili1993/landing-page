@@ -13,6 +13,7 @@ const Testimonials = () => {
 				<h2>What our customers are saying</h2>
 				<span className="line"></span>
 				<Carousel
+					style={{ zIndex: -2 }}
 					showArrows={false}
 					showThumbs={false}
 					showStatus={false}

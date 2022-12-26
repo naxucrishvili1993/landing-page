@@ -8,12 +8,13 @@
 		text-align: left;
 
 		&-heading {
+			font-size: 1.8rem;
 			margin-bottom: 10px;
 			width: 70%;
 		}
 		&-paragraph {
 			font-weight: 300;
-			font-size: 14px;
+			font-size: 1.1rem;
 			line-height: 20px;
 			margin-bottom: 10px;
 			width: 90%;
@@ -24,7 +25,9 @@
 			border-radius: 16px;
 			color: #fff;
 			cursor: pointer;
+			font-size: 1rem;
 			letter-spacing: 1px;
+			margin-top: 20px;
 			padding: 0.5rem 1.2rem;
 			@include transition-ease;
 			&:hover {
@@ -35,7 +38,7 @@
 	& .home-right-section {
 		display: flex;
 		justify-content: center;
-		margin-top: 50px;
+		margin-top: 30%;
 		img {
 			width: 60%;
 		}
@@ -43,8 +46,27 @@
 	@include media-sm {
 		& {
 			align-items: center;
+			justify-content: space-around;
 			margin-top: 0;
 			@include flex-list(row, 20px);
+			.home-left-section {
+				width: 60%;
+				&-paragraph {
+					width: 100%;
+				}
+			}
+			.home-right-section {
+				margin-top: 0;
+			}
+		}
+	}
+	@include media-md-lg {
+		& {
+			.home-left-section {
+				&-paragraph {
+					width: 60%;
+				}
+			}
 		}
 	}
 }
